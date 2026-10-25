@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2_1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="htmlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="cssGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="jsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <filter id="shadow2_1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="450" rx="16" fill="url(#bgGrad2_1)"/>
+  <rect x="1" y="1" width="898" height="448" rx="15" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="450" y="42" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    웹 개발의 3대 핵심 언어와 역할 분담
+  </text>
+  <text x="450" y="66" text-anchor="middle" fill="#94a3b8" font-size="13" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+    HTML(구조) · CSS(스타일 및 반응형) · JavaScript(동적 기능 및 무한 스크롤)
+  </text>
+
+  <!-- HTML Card -->
+  <g transform="translate(35, 95)" filter="url(#shadow2_1)">
+    <rect width="255" height="320" rx="12" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+    <rect x="0" y="0" width="255" height="42" rx="12" fill="url(#htmlGrad)"/>
+    <text x="127" y="27" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold" font-family="sans-serif">
+      HTML5 (구조와 내용)
+    </text>
+    
+    <rect x="75" y="55" width="105" height="24" rx="12" fill="#ea580c" fill-opacity="0.25"/>
+    <text x="127" y="71" text-anchor="middle" fill="#fb923c" font-size="11" font-weight="bold" font-family="sans-serif">건물의 뼈대와 벽</text>
+
+    <g transform="translate(15, 90)">
+      <rect width="225" height="110" rx="8" fill="#0f172a"/>
+      <text x="15" y="24" fill="#fdba74" font-size="11" font-weight="bold" font-family="sans-serif">📌 주요 역할</text>
+      <text x="15" y="46" fill="#e2e8f0" font-size="11" font-family="sans-serif">• 웹 문서의 구역 분할(헤더/본문)</text>
+      <text x="15" y="66" fill="#e2e8f0" font-size="11" font-family="sans-serif">• 제목(&lt;h1&gt;), 단락(&lt;p&gt;), 링크</text>
+      <text x="15" y="86" fill="#e2e8f0" font-size="11" font-family="sans-serif">• 이미지, 표, 입력 양식 배치</text>
+      <text x="15" y="102" fill="#94a3b8" font-size="10" font-family="sans-serif">• HTML 5 표준 규격 정착</text>
+    </g>
+
+    <g transform="translate(15, 215)">
+      <rect width="225" height="85" rx="8" fill="#0f172a"/>
+      <text x="15" y="24" fill="#fb923c" font-size="11" font-weight="bold" font-family="sans-serif">💡 마크업(Markup)이란?</text>
+      <text x="15" y="46" fill="#94a3b8" font-size="10" font-family="sans-serif">텍스트에 태그 기호를 붙여</text>
+      <text x="15" y="62" fill="#94a3b8" font-size="10" font-family="sans-serif">"여기는 제목이야"라고 브라우저에</text>
+      <text x="15" y="78" fill="#94a3b8" font-size="10" font-family="sans-serif">의미를 부여하는 작업</text>
+    </g>
+  </g>
+
+  <!-- CSS Card -->
+  <g transform="translate(322, 95)" filter="url(#shadow2_1)">
+    <rect width="255" height="320" rx="12" fill="#1e293b" stroke="#0ea5e9" stroke-width="1.5"/>
+    <rect x="0" y="0" width="255" height="42" rx="12" fill="url(#cssGrad)"/>
+    <text x="127" y="27" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold" font-family="sans-serif">
+      CSS3 (스타일과 표현)
+    </text>
+
+    <rect x="70" y="55" width="115" height="24" rx="12" fill="#0284c7" fill-opacity="0.25"/>
+    <text x="127" y="71" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="bold" font-family="sans-serif">인테리어와 외관</text>
+
+    <g transform="translate(15, 90)">
+      <rect width="225" height="110" rx="8" fill="#0f172a"/>
+      <text x="15" y="24" fill="#7dd3fc" font-size="11" font-weight="bold" font-family="sans-serif">📌 주요 역할</text>
+      <text x="15" y="46" fill="#e2e8f0" font-size="11" font-family="sans-serif">• 색상, 배경, 글꼴(폰트) 지정</text>
+      <text x="15" y="66" fill="#e2e8f0" font-size="11" font-family="sans-serif">• Flexbox / Grid 레이아웃 배치</text>
+      <text x="15" y="86" fill="#e2e8f0" font-size="11" font-family="sans-serif">• 트랜지션 및 애니메이션 효과</text>
+      <text x="15" y="102" fill="#38bdf8" font-size="10" font-weight="bold" font-family="sans-serif">• 매년 새로운 최신 기능 추가 중</text>
+    </g>
+
+    <g transform="translate(15, 215)">
+      <rect width="225" height="85" rx="8" fill="#0f172a"/>
+      <text x="15" y="24" fill="#38bdf8" font-size="11" font-weight="bold" font-family="sans-serif">📱 반응형 웹 디자인 필수</text>
+      <text x="15" y="46" fill="#94a3b8" font-size="10" font-family="sans-serif">PC, 태블릿, 스마트폰 등</text>
+      <text x="15" y="62" fill="#94a3b8" font-size="10" font-family="sans-serif">화면 해상도에 맞춰 자동으로</text>
+      <text x="15" y="78" fill="#94a3b8" font-size="10" font-family="sans-serif">최적의 레이아웃으로 변환</text>
+    </g>
+  </g>
+
+  <!-- JS Card -->
+  <g transform="translate(610, 95)" filter="url(#shadow2_1)">
+    <rect width="255" height="320" rx="12" fill="#1e293b" stroke="#eab308" stroke-width="1.5"/>
+    <rect x="0" y="0" width="255" height="42" rx="12" fill="url(#jsGrad)"/>
+    <text x="127" y="27" text-anchor="middle" fill="#000000" font-size="15" font-weight="bold" font-family="sans-serif">
+      JavaScript (동작과 인터랙션)
+    </text>
+
+    <rect x="65" y="55" width="125" height="24" rx="12" fill="#ca8a04" fill-opacity="0.25"/>
+    <text x="127" y="71" text-anchor="middle" fill="#facc15" font-size="11" font-weight="bold" font-family="sans-serif">전기 배선과 두뇌</text>
+
+    <g transform="translate(15, 90)">
+      <rect width="225" height="110" rx="8" fill="#0f172a"/>
+      <text x="15" y="24" fill="#fde047" font-size="11" font-weight="bold" font-family="sans-serif">📌 주요 역할</text>
+      <text x="15" y="46" fill="#e2e8f0" font-size="11" font-family="sans-serif">• 사용자 이벤트(클릭, 스크롤) 제어</text>
+      <text x="15" y="66" fill="#e2e8f0" font-size="11" font-family="sans-serif">• 새로고침 없는 서버 비동기 통신</text>
+      <text x="15" y="86" fill="#e2e8f0" font-size="11" font-family="sans-serif">• 무한 스크롤(SNS 피드) 구현</text>
+      <text x="15" y="102" fill="#94a3b8" font-size="10" font-family="sans-serif">• 프런트엔드의 핵심 심장</text>
+    </g>
+
+    <g transform="translate(15, 215)">
+      <rect width="225" height="85" rx="8" fill="#0f172a"/>
+      <text x="15" y="24" fill="#facc15" font-size="11" font-weight="bold" font-family="sans-serif">🚀 방대한 생태계</text>
+      <text x="15" y="46" fill="#94a3b8" font-size="10" font-family="sans-serif">• 프런트: React, Vue, Angular</text>
+      <text x="15" y="62" fill="#94a3b8" font-size="10" font-family="sans-serif">• 백엔드: Node.js 서버 확장</text>
+      <text x="15" y="78" fill="#94a3b8" font-size="10" font-family="sans-serif">• 시각화: D3.js, Chart.js</text>
+    </g>
+  </g>
+</svg>
