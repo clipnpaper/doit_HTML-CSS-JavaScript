@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cardGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="shadow5" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="880" height="430" rx="16" fill="url(#bgGrad5)"/>
+  <rect x="1" y="1" width="878" height="428" rx="15" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="440" y="40" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+    모두를 위한 기술: 웹 접근성과 정보 접근성 (Accessibility)
+  </text>
+  <text x="440" y="64" text-anchor="middle" fill="#94a3b8" font-size="13" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+    장애인, 고령자, 키오스크 이용자 등 신체·환경적 제약에 상관없이 동등하게 정보에 접근할 권리
+  </text>
+
+  <!-- 4 PRINCIPLES CARDS -->
+  <!-- CARD 1: 인식의 용이성 -->
+  <g transform="translate(30, 95)" filter="url(#shadow5)">
+    <rect width="190" height="230" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="0" y="0" width="190" height="38" rx="12" fill="url(#cardGrad1)"/>
+    <text x="95" y="24" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold" font-family="sans-serif">
+      1. 인식의 용이성
+    </text>
+    <text x="95" y="58" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="bold" font-family="sans-serif">(Perceivable)</text>
+    <rect x="12" y="70" width="166" height="1" fill="#334155"/>
+    
+    <text x="15" y="95" fill="#cbd5e1" font-size="11" font-family="sans-serif">정보를 감각을 통해</text>
+    <text x="15" y="113" fill="#cbd5e1" font-size="11" font-family="sans-serif">인식할 수 있어야 함</text>
+
+    <rect x="12" y="130" width="166" height="85" rx="6" fill="#0f172a"/>
+    <text x="20" y="152" fill="#38bdf8" font-size="11" font-weight="bold" font-family="sans-serif">💡 주요 지침</text>
+    <text x="20" y="172" fill="#94a3b8" font-size="10" font-family="sans-serif">• 이미지 대체 텍스트(alt)</text>
+    <text x="20" y="190" fill="#94a3b8" font-size="10" font-family="sans-serif">• 동영상 자막 / 음성 해설</text>
+    <text x="20" y="206" fill="#94a3b8" font-size="10" font-family="sans-serif">• 명도 대비 4.5:1 이상</text>
+  </g>
+
+  <!-- CARD 2: 운용의 용이성 -->
+  <g transform="translate(235, 95)" filter="url(#shadow5)">
+    <rect width="190" height="230" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+    <rect x="0" y="0" width="190" height="38" rx="12" fill="url(#cardGrad2)"/>
+    <text x="95" y="24" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold" font-family="sans-serif">
+      2. 운용의 용이성
+    </text>
+    <text x="95" y="58" text-anchor="middle" fill="#34d399" font-size="11" font-weight="bold" font-family="sans-serif">(Operable)</text>
+    <rect x="12" y="70" width="166" height="1" fill="#334155"/>
+    
+    <text x="15" y="95" fill="#cbd5e1" font-size="11" font-family="sans-serif">모든 기능을 쉽게</text>
+    <text x="15" y="113" fill="#cbd5e1" font-size="11" font-family="sans-serif">조작할 수 있어야 함</text>
+
+    <rect x="12" y="130" width="166" height="85" rx="6" fill="#0f172a"/>
+    <text x="20" y="152" fill="#34d399" font-size="11" font-weight="bold" font-family="sans-serif">💡 주요 지침</text>
+    <text x="20" y="172" fill="#94a3b8" font-size="10" font-family="sans-serif">• 키보드만으로 접근 가능</text>
+    <text x="20" y="190" fill="#94a3b8" font-size="10" font-family="sans-serif">• 충분한 반응 시간 제공</text>
+    <text x="20" y="206" fill="#94a3b8" font-size="10" font-family="sans-serif">• 깜빡임/번쩍임 제한</text>
+  </g>
+
+  <!-- CARD 3: 이해의 용이성 -->
+  <g transform="translate(440, 95)" filter="url(#shadow5)">
+    <rect width="190" height="230" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5"/>
+    <rect x="0" y="0" width="190" height="38" rx="12" fill="url(#cardGrad3)"/>
+    <text x="95" y="24" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold" font-family="sans-serif">
+      3. 이해의 용이성
+    </text>
+    <text x="95" y="58" text-anchor="middle" fill="#fbbf24" font-size="11" font-weight="bold" font-family="sans-serif">(Understandable)</text>
+    <rect x="12" y="70" width="166" height="1" fill="#334155"/>
+    
+    <text x="15" y="95" fill="#cbd5e1" font-size="11" font-family="sans-serif">콘텐츠와 인터페이스를</text>
+    <text x="15" y="113" fill="#cbd5e1" font-size="11" font-family="sans-serif">쉽게 이해할 수 있어야 함</text>
+
+    <rect x="12" y="130" width="166" height="85" rx="6" fill="#0f172a"/>
+    <text x="20" y="152" fill="#fbbf24" font-size="11" font-weight="bold" font-family="sans-serif">💡 주요 지침</text>
+    <text x="20" y="172" fill="#94a3b8" font-size="10" font-family="sans-serif">• 기본 언어 명시 (lang="ko")</text>
+    <text x="20" y="190" fill="#94a3b8" font-size="10" font-family="sans-serif">• 예측 가능한 네비게이션</text>
+    <text x="20" y="206" fill="#94a3b8" font-size="10" font-family="sans-serif">• 입력 오류 정정 안내</text>
+  </g>
+
+  <!-- CARD 4: 견고성 -->
+  <g transform="translate(645, 95)" filter="url(#shadow5)">
+    <rect width="190" height="230" rx="12" fill="#1e293b" stroke="#c084fc" stroke-width="1.5"/>
+    <rect x="0" y="0" width="190" height="38" rx="12" fill="url(#cardGrad4)"/>
+    <text x="95" y="24" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold" font-family="sans-serif">
+      4. 견고성
+    </text>
+    <text x="95" y="58" text-anchor="middle" fill="#c084fc" font-size="11" font-weight="bold" font-family="sans-serif">(Robust)</text>
+    <rect x="12" y="70" width="166" height="1" fill="#334155"/>
+    
+    <text x="15" y="95" fill="#cbd5e1" font-size="11" font-family="sans-serif">미래의 기술과 보조공학</text>
+    <text x="15" y="113" fill="#cbd5e1" font-size="11" font-family="sans-serif">기기에서도 호환되어야 함</text>
+
+    <rect x="12" y="130" width="166" height="85" rx="6" fill="#0f172a"/>
+    <text x="20" y="152" fill="#c084fc" font-size="11" font-weight="bold" font-family="sans-serif">💡 주요 지침</text>
+    <text x="20" y="172" fill="#94a3b8" font-size="10" font-family="sans-serif">• W3C 웹 표준 문법 준수</text>
+    <text x="20" y="190" fill="#94a3b8" font-size="10" font-family="sans-serif">• 스크린 리더 호환 마크업</text>
+    <text x="20" y="206" fill="#94a3b8" font-size="10" font-family="sans-serif">• 시맨틱 태그 올바른 사용</text>
+  </g>
+
+  <!-- BOTTOM EXPANSION: KIOSK & PLATFORMS -->
+  <g transform="translate(30, 345)">
+    <rect width="805" height="60" rx="10" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+    <text x="25" y="27" fill="#f8fafc" font-size="13" font-weight="bold" font-family="sans-serif">
+      📢 웹 접근성에서 '무인 정보 단말기(키오스크) 정보 접근성'으로 확장!
+    </text>
+    <text x="25" y="47" fill="#94a3b8" font-size="11" font-family="sans-serif">
+      • 정부 무인정보단말기 UI 플랫폼  |  • 네이버 널리(NULI) 접근성 가이드라인 포털 운영 중
+    </text>
+    <rect x="670" y="15" width="145" height="30" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <text x="742" y="35" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="bold" font-family="sans-serif">
+      모두를 위한 웹 표준 ✨
+    </text>
+  </g>
+</svg>

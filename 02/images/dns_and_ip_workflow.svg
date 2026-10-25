@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="blueGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="920" height="480" rx="16" fill="url(#bgGrad3)"/>
+  <rect x="1" y="1" width="918" height="478" rx="15" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="460" y="42" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+    IP 주소, 도메인 이름, DNS 서버의 동작 흐름
+  </text>
+  <text x="460" y="66" text-anchor="middle" fill="#94a3b8" font-size="13" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+    숫자로 된 IP 주소를 몰라도 도메인 네임(google.com)으로 웹에 접속할 수 있는 원리
+  </text>
+
+  <!-- TOP-RIGHT: DNS SERVER BOX -->
+  <g transform="translate(580, 95)" filter="url(#shadow3)">
+    <rect width="280" height="135" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="0" y="0" width="280" height="38" rx="12" fill="url(#amberGrad)"/>
+    <text x="140" y="24" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold" font-family="sans-serif">
+      📖 DNS 서버 (인터넷 전화번호부)
+    </text>
+    <g transform="translate(15, 50)">
+      <rect width="250" height="70" rx="6" fill="#0f172a"/>
+      <text x="15" y="22" fill="#fbbf24" font-size="12" font-family="monospace">도메인 ↔ IP 매핑 테이블</text>
+      <text x="15" y="42" fill="#e2e8f0" font-size="12" font-family="monospace">google.com → 142.250.207.46</text>
+      <text x="15" y="60" fill="#e2e8f0" font-size="12" font-family="monospace">naver.com  → 223.130.195.95</text>
+    </g>
+  </g>
+
+  <!-- LEFT: USER & BROWSER (CLIENT) -->
+  <g transform="translate(60, 150)" filter="url(#shadow3)">
+    <rect width="260" height="260" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="0" y="0" width="260" height="38" rx="12" fill="url(#blueGrad3)"/>
+    <text x="130" y="24" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold" font-family="sans-serif">
+      🖥️ 사용자 웹 브라우저 (클라이언트)
+    </text>
+
+    <!-- Address Bar Simulation -->
+    <g transform="translate(15, 52)">
+      <rect width="230" height="36" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+      <text x="10" y="23" fill="#38bdf8" font-size="12" font-family="monospace">https://google.com</text>
+      <text x="195" y="23" fill="#64748b" font-size="12">↵</text>
+    </g>
+
+    <text x="20" y="115" fill="#94a3b8" font-size="11" font-family="sans-serif">주소창에 도메인 이름을 입력하면</text>
+    <text x="20" y="133" fill="#cbd5e1" font-size="12" font-family="sans-serif">브라우저는 내부적으로 IP 주소를</text>
+    <text x="20" y="151" fill="#cbd5e1" font-size="12" font-family="sans-serif">찾기 위해 DNS 서버와 통신합니다.</text>
+
+    <rect x="15" y="175" width="230" height="65" rx="8" fill="#0f172a"/>
+    <text x="25" y="198" fill="#38bdf8" font-size="12" font-weight="bold" font-family="sans-serif">결과 화면 렌더링</text>
+    <text x="25" y="222" fill="#94a3b8" font-size="11" font-family="sans-serif">전송받은 HTML/CSS 문서를 해석하여</text>
+    <text x="25" y="235" fill="#94a3b8" font-size="11" font-family="sans-serif">사용자에게 화면을 표시</text>
+  </g>
+
+  <!-- BOTTOM-RIGHT: WEB SERVER -->
+  <g transform="translate(580, 275)" filter="url(#shadow3)">
+    <rect width="280" height="135" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+    <rect x="0" y="0" width="280" height="38" rx="12" fill="url(#purpleGrad3)"/>
+    <text x="140" y="24" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold" font-family="sans-serif">
+      🌐 웹 서버 (실제 웹사이트 호스트)
+    </text>
+    <g transform="translate(15, 50)">
+      <rect width="250" height="70" rx="6" fill="#0f172a"/>
+      <text x="15" y="22" fill="#c084fc" font-size="12" font-family="monospace">IP: 142.250.207.46</text>
+      <text x="15" y="42" fill="#cbd5e1" font-size="12" font-family="sans-serif">보유 파일: index.html, style.css</text>
+      <text x="15" y="60" fill="#94a3b8" font-size="11" font-family="sans-serif">요청 수신 시 해당 문서를 즉시 반환</text>
+    </g>
+  </g>
+
+  <!-- STEP 1 ARROW: Browser -> DNS Server -->
+  <path d="M 320 185 Q 430 140 575 140" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <rect x="360" y="130" width="155" height="24" rx="12" fill="#78350f" stroke="#f59e0b" stroke-width="1"/>
+  <text x="437" y="146" text-anchor="middle" fill="#fef3c7" font-size="11" font-weight="bold" font-family="sans-serif">
+    ① "google.com IP 알려줘!"
+  </text>
+
+  <!-- STEP 2 ARROW: DNS Server -> Browser -->
+  <path d="M 575 175 Q 450 180 320 215" fill="none" stroke="#34d399" stroke-width="2.5"/>
+  <rect x="350" y="180" width="180" height="24" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+  <text x="440" y="196" text-anchor="middle" fill="#d1fae5" font-size="11" font-weight="bold" font-family="sans-serif">
+    ② "IP는 142.250.207.46 이야"
+  </text>
+
+  <!-- STEP 3 ARROW: Browser -> Web Server -->
+  <path d="M 320 310 Q 440 315 575 320" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+  <rect x="345" y="295" width="190" height="24" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1"/>
+  <text x="440" y="311" text-anchor="middle" fill="#e0f2fe" font-size="11" font-weight="bold" font-family="sans-serif">
+    ③ "해당 IP의 웹페이지 줘 (HTTP)"
+  </text>
+
+  <!-- STEP 4 ARROW: Web Server -> Browser -->
+  <path d="M 575 370 Q 440 395 320 380" fill="none" stroke="#a855f7" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <rect x="350" y="368" width="180" height="24" rx="12" fill="#581c87" stroke="#a855f7" stroke-width="1"/>
+  <text x="440" y="384" text-anchor="middle" fill="#f3e8ff" font-size="11" font-weight="bold" font-family="sans-serif">
+    ④ "HTML / CSS / JS 문서 응답"
+  </text>
+</svg>

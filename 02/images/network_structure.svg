@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="880" height="440" rx="16" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="878" height="438" rx="15" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="440" y="42" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    인터넷 연결 구조의 진화: 직접 연결 vs 라우터 중계 방식
+  </text>
+  <text x="440" y="66" text-anchor="middle" fill="#94a3b8" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    컴퓨터가 늘어날수록 직접 연결은 불가능해지며, 라우터를 통해 효율적인 네트워크가 구축됩니다
+  </text>
+
+  <!-- LEFT PANEL: 직접 연결 방식 -->
+  <g transform="translate(30, 85)">
+    <rect width="395" height="325" rx="12" fill="#1e293b" fill-opacity="0.6" stroke="#475569" stroke-width="1"/>
+    <rect x="0" y="0" width="395" height="40" rx="12" fill="#ef4444" fill-opacity="0.15"/>
+    <text x="20" y="26" fill="#f87171" font-size="15" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+      ❌ 1:1 직접 케이블 연결 (Full Mesh)
+    </text>
+
+    <!-- Mesh lines connecting 5 nodes -->
+    <!-- Center of left panel is approx x=197, y=170 -->
+    <!-- Node positions: A(197, 90), B(285, 145), C(250, 240), D(144, 240), E(110, 145) -->
+    <g stroke="#f87171" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="3,3">
+      <line x1="197" y1="90" x2="285" y2="145"/>
+      <line x1="197" y1="90" x2="250" y2="240"/>
+      <line x1="197" y1="90" x2="144" y2="240"/>
+      <line x1="197" y1="90" x2="110" y2="145"/>
+      <line x1="285" y1="145" x2="250" y2="240"/>
+      <line x1="285" y1="145" x2="144" y2="240"/>
+      <line x1="285" y1="145" x2="110" y2="145"/>
+      <line x1="250" y1="240" x2="144" y2="240"/>
+      <line x1="250" y1="240" x2="110" y2="145"/>
+      <line x1="144" y1="240" x2="110" y2="145"/>
+    </g>
+
+    <!-- Nodes -->
+    <g filter="url(#shadow)">
+      <!-- A -->
+      <circle cx="197" cy="90" r="22" fill="#334155" stroke="#f87171" stroke-width="2"/>
+      <text x="197" y="95" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" font-family="sans-serif">PC A</text>
+      <!-- B -->
+      <circle cx="285" cy="145" r="22" fill="#334155" stroke="#f87171" stroke-width="2"/>
+      <text x="285" y="150" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" font-family="sans-serif">PC B</text>
+      <!-- C -->
+      <circle cx="250" cy="240" r="22" fill="#334155" stroke="#f87171" stroke-width="2"/>
+      <text x="250" y="245" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" font-family="sans-serif">PC C</text>
+      <!-- D -->
+      <circle cx="144" cy="240" r="22" fill="#334155" stroke="#f87171" stroke-width="2"/>
+      <text x="144" y="245" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" font-family="sans-serif">PC D</text>
+      <!-- E -->
+      <circle cx="110" cy="145" r="22" fill="#334155" stroke="#f87171" stroke-width="2"/>
+      <text x="110" y="150" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="bold" font-family="sans-serif">PC E</text>
+    </g>
+
+    <!-- Description -->
+    <rect x="15" y="278" width="365" height="36" rx="6" fill="#0f172a" fill-opacity="0.8"/>
+    <text x="197" y="300" text-anchor="middle" fill="#fca5a5" font-size="12" font-family="sans-serif">
+      5대만 있어도 선 10개 필요 (N대면 N(N-1)/2개 케이블 폭증)
+    </text>
+  </g>
+
+  <!-- RIGHT PANEL: 라우터 중계 방식 -->
+  <g transform="translate(455, 85)">
+    <rect width="395" height="325" rx="12" fill="#1e293b" fill-opacity="0.6" stroke="#475569" stroke-width="1"/>
+    <rect x="0" y="0" width="395" height="40" rx="12" fill="#10b981" fill-opacity="0.15"/>
+    <text x="20" y="26" fill="#34d399" font-size="15" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+      ✔ 라우터(Router) 기반 인터넷 연결
+    </text>
+
+    <!-- Lines connecting to center Router -->
+    <!-- Router center: (197, 165) -->
+    <g stroke="#38bdf8" stroke-width="2.5" stroke-opacity="0.7">
+      <line x1="197" y1="165" x2="197" y2="85"/>
+      <line x1="197" y1="165" x2="295" y2="120"/>
+      <line x1="197" y1="165" x2="275" y2="235"/>
+      <line x1="197" y1="165" x2="119" y2="235"/>
+      <line x1="197" y1="165" x2="99" y2="120"/>
+    </g>
+
+    <!-- Center Router Node -->
+    <g filter="url(#shadow)">
+      <rect x="152" y="137" width="90" height="56" rx="12" fill="url(#purpleGrad)"/>
+      <text x="197" y="162" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold" font-family="sans-serif">라우터</text>
+      <text x="197" y="179" text-anchor="middle" fill="#e9d5ff" font-size="11" font-family="sans-serif">(Router)</text>
+    </g>
+
+    <!-- Outer PC Nodes -->
+    <g filter="url(#shadow)">
+      <circle cx="197" cy="85" r="20" fill="url(#blueGrad)"/>
+      <text x="197" y="90" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif">PC A</text>
+
+      <circle cx="295" cy="120" r="20" fill="url(#blueGrad)"/>
+      <text x="295" y="125" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif">PC B</text>
+
+      <circle cx="275" cy="235" r="20" fill="url(#blueGrad)"/>
+      <text x="275" y="240" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif">PC C</text>
+
+      <circle cx="119" cy="235" r="20" fill="url(#blueGrad)"/>
+      <text x="119" y="240" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif">PC D</text>
+
+      <circle cx="99" cy="120" r="20" fill="url(#blueGrad)"/>
+      <text x="99" y="125" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif">PC E</text>
+    </g>
+
+    <!-- Description -->
+    <rect x="15" y="278" width="365" height="36" rx="6" fill="#0f172a" fill-opacity="0.8"/>
+    <text x="197" y="300" text-anchor="middle" fill="#6ee7b7" font-size="12" font-family="sans-serif">
+      각 기기는 라우터에 1개씩만 연결 (라우터 간 연결로 전 세계 확장)
+    </text>
+  </g>
+</svg>

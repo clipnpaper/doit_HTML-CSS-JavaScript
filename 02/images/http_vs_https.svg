@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <linearGradient id="greenGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="shadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="880" height="430" rx="16" fill="url(#bgGrad4)"/>
+  <rect x="1" y="1" width="878" height="428" rx="15" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="440" y="40" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+    프로토콜 비교: HTTP vs HTTPS 보안 통신
+  </text>
+  <text x="440" y="64" text-anchor="middle" fill="#94a3b8" font-size="13" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+    보안 계층(SSL/TLS 암호화) 추가 여부에 따른 데이터 전송 안전성 차이
+  </text>
+
+  <!-- TOP BOX: HTTP (UNENCRYPTED) -->
+  <g transform="translate(40, 85)" filter="url(#shadow4)">
+    <rect width="800" height="150" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+    <rect x="0" y="0" width="800" height="34" rx="12" fill="#ef4444" fill-opacity="0.2"/>
+    <text x="20" y="23" fill="#fca5a5" font-size="14" font-weight="bold" font-family="sans-serif">
+      ❌ HTTP (HyperText Transfer Protocol) - 일반 평문 전송 (보안 취약)
+    </text>
+
+    <!-- Browser Tag -->
+    <rect x="20" y="48" width="160" height="85" rx="8" fill="#0f172a"/>
+    <text x="35" y="74" fill="#f87171" font-size="12" font-weight="bold" font-family="sans-serif">⚠️ 주의 요함</text>
+    <text x="35" y="95" fill="#94a3b8" font-size="11" font-family="monospace">http://example.com</text>
+    <text x="35" y="115" fill="#ef4444" font-size="10" font-family="sans-serif">암호화되지 않은 사이트</text>
+
+    <!-- Connection Line with Plain Text -->
+    <line x1="195" y1="90" x2="605" y2="90" stroke="#f87171" stroke-width="2" stroke-dasharray="5,5"/>
+    <rect x="270" y="66" width="260" height="48" rx="8" fill="#450a0a" stroke="#b91c1c" stroke-width="1"/>
+    <text x="400" y="86" text-anchor="middle" fill="#fca5a5" font-size="11" font-weight="bold" font-family="monospace">
+      ID: test / PW: 1234 (평문 전송)
+    </text>
+    <text x="400" y="103" text-anchor="middle" fill="#ef4444" font-size="10" font-family="sans-serif">
+      해커나 제3자가 통신 도청 시 비밀번호 즉시 유출 위험!
+    </text>
+
+    <!-- Server Tag -->
+    <rect x="620" y="48" width="160" height="85" rx="8" fill="#0f172a"/>
+    <text x="635" y="74" fill="#f8fafc" font-size="12" font-weight="bold" font-family="sans-serif">웹 서버</text>
+    <text x="635" y="95" fill="#94a3b8" font-size="11" font-family="sans-serif">기본 80번 포트 수신</text>
+    <text x="635" y="115" fill="#cbd5e1" font-size="10" font-family="sans-serif">평문 그대로 데이터 처리</text>
+  </g>
+
+  <!-- BOTTOM BOX: HTTPS (ENCRYPTED) -->
+  <g transform="translate(40, 255)" filter="url(#shadow4)">
+    <rect width="800" height="150" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="0" y="0" width="800" height="34" rx="12" fill="#10b981" fill-opacity="0.2"/>
+    <text x="20" y="23" fill="#6ee7b7" font-size="14" font-weight="bold" font-family="sans-serif">
+      ✔ HTTPS (HTTP Secure) - SSL / TLS 암호화 터널 통신 (안전 보장)
+    </text>
+
+    <!-- Browser Tag -->
+    <rect x="20" y="48" width="160" height="85" rx="8" fill="#0f172a"/>
+    <text x="35" y="74" fill="#34d399" font-size="12" font-weight="bold" font-family="sans-serif">🔒 이 연결은 안전합니다</text>
+    <text x="35" y="95" fill="#38bdf8" font-size="11" font-family="monospace">https://example.com</text>
+    <text x="35" y="115" fill="#34d399" font-size="10" font-family="sans-serif">보안 인증서 적용</text>
+
+    <!-- Connection Line with Cipher Text -->
+    <line x1="195" y1="90" x2="605" y2="90" stroke="#34d399" stroke-width="3"/>
+    <rect x="270" y="66" width="260" height="48" rx="8" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+    <text x="400" y="86" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="bold" font-family="monospace">
+      e8!$bA9@#zQx*91 (강력한 암호화)
+    </text>
+    <text x="400" y="103" text-anchor="middle" fill="#a7f3d0" font-size="10" font-family="sans-serif">
+      중간에서 가로채도 암호화 해독 불가 (완벽한 보안)
+    </text>
+
+    <!-- Server Tag -->
+    <rect x="620" y="48" width="160" height="85" rx="8" fill="#0f172a"/>
+    <text x="635" y="74" fill="#f8fafc" font-size="12" font-weight="bold" font-family="sans-serif">보안 웹 서버</text>
+    <text x="635" y="95" fill="#94a3b8" font-size="11" font-family="sans-serif">기본 443번 포트 수신</text>
+    <text x="635" y="115" fill="#34d399" font-size="10" font-family="sans-serif">SSL 인증서로 복호화</text>
+  </g>
+</svg>
